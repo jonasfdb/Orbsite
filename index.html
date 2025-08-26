@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orb – Your Discord Sidekick</title>
+  <meta name="author" content="jonasfdb" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="./scripts/script.js"></script>
+  <script defer src="./scripts/tilt.js"></script>
+</head>
+
+<body>
+  <canvas id="background-canvas"></canvas>
+
+  <!-- Hamburger button -->
+  <button id="nav-toggle" class="menu-btn" aria-label="Open menu">
+    <!-- burger bars (CSS draws them lol) -->
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Slide in nav drawer -->
+  <nav id="side-nav" class="side-nav">
+    <a href="index.html" class="btn secondary">Home</a>
+    <a href="docs.html" class="btn tertiary">Docs</a>
+    <a href="legal.html" class="btn tertiary">Legal</a>
+    <a href="https://github.com/jonasfdb/Orb" class="btn primary">GitHub</a>
+    <a href="https://discord.com/oauth2/authorize?client_id=875699883460427836&permissions=1099780140278&integration_type=0&scope=bot"
+      class="btn primary">Invite</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>This is Orb</h1>
+      <p>Your Discord companion with a very very round soul.</p>
+      <div class="hero-buttons">
+        <a href="discord" class="btn primary">Invite Orb</a>
+        <a href="#features" class="btn secondary">See Features</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="glass-box">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <article class="fcard tilt">
+          <div class="fcard-icon" aria-hidden="true">
+            <!-- Leveling / Rewards -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 12.91 4 9.27l5.91-.99L12 2z" />
+            </svg>
+          </div>
+          <h3>Leveling & Rewards</h3>
+          <p>Keep your community engaged with XP, levels, and automatic role rewards.</p>
+        </article>
+
+        <article class="fcard tilt">
+          <div class="fcard-icon" aria-hidden="true">
+            <!-- Security / Logging -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22c4.97-1.33 8-4.66 8-10V5l-8-3-8 3v7c0 5.34 3.03 8.67 8 10z" />
+            </svg>
+          </div>
+          <h3>Server Protection</h3>
+          <p>Logging, captcha verification, and moderation tools to keep your server safe.</p>
+        </article>
+
+        <article class="fcard tilt">
+          <div class="fcard-icon" aria-hidden="true">
+            <!-- Economy -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v12M8 10h5a2 2 0 0 1 0 4h-5" />
+            </svg>
+          </div>
+          <h3>Economy</h3>
+          <p>A growing system for fun — starting with gambling, expanding to shops & trading soon.</p>
+        </article>
+
+        <article class="fcard tilt">
+          <div class="fcard-icon" aria-hidden="true">
+            <!-- Fun commands -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="9" cy="10" r="1" />
+              <circle cx="15" cy="10" r="1" />
+              <path d="M8 15c1.33 1 2.67 1 4 0s2.67-1 4 0" />
+            </svg>
+          </div>
+          <h3>Fun Commands</h3>
+          <p>Keep things lively with random cats, jokes, and plenty of questionable entertainment.</p>
+        </article>
+
+        <article class="fcard fcard--wide">
+          <div class="fcard-icon" aria-hidden="true">
+            <!-- Arrow -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </div>
+          <h3>More to Come</h3>
+          <p>Orb is growing fast and steady! See what’s planned next on the roadmap.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="glass-box">
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <div class="roadmap-item roadmap-now">
+          <div class="roadmap-dot" aria-hidden="true"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-badge">In The Works</div>
+            <h3>Fully fledged economy</h3>
+            <p>
+              Besides gambling, you can soon also buy and sell things with gems you can earn through simply talking, or
+              through other funny stuff.
+              And there's a special shop coming too...
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item roadmap-soon">
+          <div class="roadmap-dot" aria-hidden="true"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-badge">Coming Soon</div>
+            <h3>Profiles, Passports, Permanent Achievements</h3>
+            <p>
+              Leveling is no fun if there's nothing to gain, so Orb will soon have achievements to collect in the form
+              of stamps that you can add to your personal, soon-to-be-added passport.
+              Your passport is customizeable and if you allow, Orb will auto-introduce you to a new server if you have
+              it filled out!
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item roadmap-later">
+          <div class="roadmap-dot" aria-hidden="true"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-badge">Will Come Later</div>
+            <h3>Better Leveling Progression</h3>
+            <p>
+              To make the leveling system more interactive, you can eventually select a class and skills in a skill tree
+              that modify how you get XP based on how you use Discord.
+              Are you more of a quick talker, or a lurker, or a voice user? Skills you pick account for this, and maybe
+              you can gain an edge over others. And it brings gems too!
+            </p>
+          </div>
+        </div>
+
+        <div class="roadmap-item roadmap-later">
+          <div class="roadmap-dot" aria-hidden="true"></div>
+          <div class="roadmap-card">
+            <div class="roadmap-badge">Will Come Later</div>
+            <h3>Discord Login and a web dashboard</h3>
+            <p>
+              Managing bots through Discord gets tedious if you cannot remember the commands, so in the long run, I plan
+              on adding a web dashboard on this site here.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="glass-box">
+      <div class="about-icon" aria-hidden="true">
+        <!-- Globe / community icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+        </svg>
+      </div>
+      <h2>About Orb</h2>
+      <blockquote class="about-quote">
+        Orb began as a small leveling bot that I built during the horrors of the pandemic,
+        and over time it grew into my favorite project that I kept revisiting.
+      </blockquote>
+      <p>
+        First and most importantly: Orb is open source under the <strong>AGPL v3</strong>, free for everyone to use and
+        contribute to.
+        Orb will forever remain open and freely accessible, unlike some commercial bots that lock features behind
+        paywalls.
+        I want to build this bot for the community because I too am part of that community.
+      </p>
+      <p>
+        Like I said, Orb began during the pandemic, and it has evolved so much! With features like leveling, server
+        protection, economy, and fun commands, I think Orb can be a true alternative to
+        the big bots. And with all the plans I have for the future (check the roadmap!), it will only get better.
+      </p>
+      <a href="https://github.com/jonasfdb/Orb" target="_blank" class="btn github-btn">Take a look at the bot...</a>
+      <a href="https://github.com/jonasfdb/orb-web" target="_blank" class="btn github-btn">...or this website on Github!</a>
+    </section>
+
+  </main>
+
+  <div id="marble-counter" class="marble-counter"></div>
+
+  <footer class="footer glass-box">
+    <p>&copy; 2025 jonasfdb. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="legal.html#impressum">Contact/Impressum</a>
+      <a href="legal.html">Privacy Policy</a>
+      <a href="legal.html">Terms of Service</a>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="glass-box">
+    <p style="margin-bottom: 1rem;">
+      We use cookies to store how many marbles you popped and to remember your choice on this pop-up. That's all!
+    </p>
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+      <button id="accept-cookies" class="btn primary">Allow Cookies</button>
+      <button id="decline-cookies" class="btn secondary">Only Essential</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
