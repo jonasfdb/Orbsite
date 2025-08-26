@@ -94,6 +94,7 @@ html, body {
 
 .hero-content {
   padding: 2rem;
+  background-color: var(--glass-bg-soft);
   backdrop-filter: blur(var(--blur-soft));
   -webkit-backdrop-filter: blur(var(--blur-soft));
   border: 1px solid var(--glass-border);
