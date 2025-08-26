@@ -4,23 +4,18 @@ If you are here, also check out the [source of the bot](https://github.com/jonas
 
 This website is not intended to be self-hosted. It can be, no doubt, but it won't be of much use for any other bot without changes made to it. It is, however, always the exact code running on Orb's official website, so you know there is no shady stuff going on.
 
----
-
 ## 🤝 Contributing
 
 Issues and pull requests are welcome! Please keep the scope to the website (content, copy, UI/UX, minor JS). Like with the bot, there's no real code standard to adhere to except for usual conventions.
 
 **For bot features/bugs, use the Orb bot repository instead!**
 
----
-
 ## ⚖️ License
 
 This website holds two licenses. The code is licensed user the **MIT License**. Content on the website is licensed under the Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0) license.
 
-See `./LICENSE` and `./LICENSE-CONTENT` for details on either license.
+See [LICENSE](./LICENSE) for the MIT license and [LICENSE-CONTENT](./LICENSE-CONTENT) for the CC-BY-SA-4.0 license.
 
----
 
 ## 💭 Contact
 
